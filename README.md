@@ -19,7 +19,7 @@ Built for developers who want to systematically practice DSA problems, get insta
 
 ```bash
 # Clone and enter the project
-git clone https://github.com/yourusername/interview-prep-cli.git
+git clone https://github.com/Pin3appl3ishan/interview-prep-cli
 cd interview-prep-cli
 
 # Create a virtual environment
