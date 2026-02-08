@@ -1,0 +1,219 @@
+[
+  {
+    "id": "product-of-array-except-self",
+    "title": "Product of Array Except Self",
+    "difficulty": "medium",
+    "tags": ["arrays"],
+    "description": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].\n\nThe product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.\n\nYou must write an algorithm that runs in O(n) time and without using the division operation.\n\nExample 1:\n  Input: nums = [1,2,3,4]\n  Output: [24,12,8,6]\n\nExample 2:\n  Input: nums = [-1,1,0,-3,3]\n  Output: [0,0,9,0,0]\n\nConstraints:\n  - 2 <= nums.length <= 10^5\n  - -30 <= nums[i] <= 30\n  - The product of any prefix or suffix of nums fits in a 32-bit integer."
+  },
+  {
+    "id": "maximum-subarray",
+    "title": "Maximum Subarray",
+    "difficulty": "medium",
+    "tags": ["arrays", "dynamic-programming", "divide-and-conquer"],
+    "description": "Given an integer array nums, find the subarray with the largest sum, and return its sum.\n\nExample 1:\n  Input: nums = [-2,1,-3,4,-1,2,1,-5,4]\n  Output: 6\n  Explanation: The subarray [4,-1,2,1] has the largest sum 6.\n\nExample 2:\n  Input: nums = [1]\n  Output: 1\n\nExample 3:\n  Input: nums = [5,4,-1,7,8]\n  Output: 23\n\nConstraints:\n  - 1 <= nums.length <= 10^5\n  - -10^4 <= nums[i] <= 10^4\n\nFollow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach."
+  },
+  {
+    "id": "rotate-array",
+    "title": "Rotate Array",
+    "difficulty": "medium",
+    "tags": ["arrays", "math"],
+    "description": "Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.\n\nExample 1:\n  Input: nums = [1,2,3,4,5,6,7], k = 3\n  Output: [5,6,7,1,2,3,4]\n  Explanation:\n    rotate 1 step to the right: [7,1,2,3,4,5,6]\n    rotate 2 steps to the right: [6,7,1,2,3,4,5]\n    rotate 3 steps to the right: [5,6,7,1,2,3,4]\n\nExample 2:\n  Input: nums = [-1,-100,3,99], k = 2\n  Output: [3,99,-1,-100]\n\nConstraints:\n  - 1 <= nums.length <= 10^5\n  - -2^31 <= nums[i] <= 2^31 - 1\n  - 0 <= k <= 10^5\n\nFollow up: Try to come up with as many solutions as you can. Could you do it in-place with O(1) extra space?"
+  },
+  {
+    "id": "find-minimum-rotated-sorted-array",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "difficulty": "medium",
+    "tags": ["arrays", "binary-search"],
+    "description": "Suppose an array of length n sorted in ascending order is rotated between 1 and n times. Given the sorted rotated array nums of unique elements, return the minimum element.\n\nYou must write an algorithm that runs in O(log n) time.\n\nExample 1:\n  Input: nums = [3,4,5,1,2]\n  Output: 1\n  Explanation: The original array was [1,2,3,4,5] rotated 3 times.\n\nExample 2:\n  Input: nums = [4,5,6,7,0,1,2]\n  Output: 0\n\nExample 3:\n  Input: nums = [11,13,15,17]\n  Output: 11\n\nConstraints:\n  - n == nums.length\n  - 1 <= n <= 5000\n  - -5000 <= nums[i] <= 5000\n  - All values of nums are unique."
+  },
+  {
+    "id": "reverse-linked-list",
+    "title": "Reverse Linked List",
+    "difficulty": "easy",
+    "tags": ["linked-list", "recursion"],
+    "description": "Given the head of a singly linked list, reverse the list, and return the reversed list.\n\nExample 1:\n  Input: head = [1,2,3,4,5]\n  Output: [5,4,3,2,1]\n\nExample 2:\n  Input: head = [1,2]\n  Output: [2,1]\n\nExample 3:\n  Input: head = []\n  Output: []\n\nConstraints:\n  - The number of nodes in the list is in the range [0, 5000].\n  - -5000 <= Node.val <= 5000\n\nFollow up: A linked list can be reversed either iteratively or recursively. Could you implement both?"
+  },
+  {
+    "id": "merge-two-sorted-lists",
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "easy",
+    "tags": ["linked-list", "recursion"],
+    "description": "You are given the heads of two sorted linked lists list1 and list2.\n\nMerge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.\n\nReturn the head of the merged linked list.\n\nExample 1:\n  Input: list1 = [1,2,4], list2 = [1,3,4]\n  Output: [1,1,2,3,4,4]\n\nExample 2:\n  Input: list1 = [], list2 = []\n  Output: []\n\nExample 3:\n  Input: list1 = [], list2 = [0]\n  Output: [0]\n\nConstraints:\n  - The number of nodes in both lists is in the range [0, 50].\n  - -100 <= Node.val <= 100\n  - Both list1 and list2 are sorted in non-decreasing order."
+  },
+  {
+    "id": "linked-list-cycle",
+    "title": "Linked List Cycle",
+    "difficulty": "easy",
+    "tags": ["linked-list", "two-pointers"],
+    "description": "Given head, the head of a linked list, determine if the linked list has a cycle in it.\n\nThere is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer.\n\nReturn true if there is a cycle in the linked list. Otherwise, return false.\n\nExample 1:\n  Input: head = [3,2,0,-4], pos = 1\n  Output: true\n  Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).\n\nExample 2:\n  Input: head = [1,2], pos = 0\n  Output: true\n\nExample 3:\n  Input: head = [1], pos = -1\n  Output: false\n\nConstraints:\n  - The number of nodes in the list is in the range [0, 10^4].\n  - -10^5 <= Node.val <= 10^5\n  - pos is -1 or a valid index in the linked-list.\n\nFollow up: Can you solve it using O(1) memory?"
+  },
+  {
+    "id": "remove-nth-node-from-end",
+    "title": "Remove Nth Node From End of List",
+    "difficulty": "medium",
+    "tags": ["linked-list", "two-pointers"],
+    "description": "Given the head of a linked list, remove the nth node from the end of the list and return its head.\n\nExample 1:\n  Input: head = [1,2,3,4,5], n = 2\n  Output: [1,2,3,5]\n\nExample 2:\n  Input: head = [1], n = 1\n  Output: []\n\nExample 3:\n  Input: head = [1,2], n = 1\n  Output: [1]\n\nConstraints:\n  - The number of nodes in the list is sz.\n  - 1 <= sz <= 30\n  - 0 <= Node.val <= 100\n  - 1 <= n <= sz\n\nFollow up: Could you do this in one pass?"
+  },
+  {
+    "id": "reorder-list",
+    "title": "Reorder List",
+    "difficulty": "medium",
+    "tags": ["linked-list", "two-pointers", "recursion"],
+    "description": "You are given the head of a singly linked-list:\n  L0 -> L1 -> ... -> Ln-1 -> Ln\n\nReorder the list to be:\n  L0 -> Ln -> L1 -> Ln-1 -> L2 -> Ln-2 -> ...\n\nYou may not modify the values in the list's nodes. Only nodes themselves may be changed.\n\nExample 1:\n  Input: head = [1,2,3,4]\n  Output: [1,4,2,3]\n\nExample 2:\n  Input: head = [1,2,3,4,5]\n  Output: [1,5,2,4,3]\n\nConstraints:\n  - The number of nodes in the list is in the range [1, 5 * 10^4].\n  - 1 <= Node.val <= 1000"
+  },
+  {
+    "id": "merge-k-sorted-lists",
+    "title": "Merge K Sorted Lists",
+    "difficulty": "hard",
+    "tags": ["linked-list", "heap", "divide-and-conquer"],
+    "description": "You are given an array of k linked-lists lists, each linked-list is sorted in ascending order.\n\nMerge all the linked-lists into one sorted linked-list and return it.\n\nExample 1:\n  Input: lists = [[1,4,5],[1,3,4],[2,6]]\n  Output: [1,1,2,3,4,4,5,6]\n  Explanation: The linked-lists are:\n    [1->4->5, 1->3->4, 2->6]\n  merging them into one sorted list:\n    1->1->2->3->4->4->5->6\n\nExample 2:\n  Input: lists = []\n  Output: []\n\nExample 3:\n  Input: lists = [[]]\n  Output: []\n\nConstraints:\n  - k == lists.length\n  - 0 <= k <= 10^4\n  - 0 <= lists[i].length <= 500\n  - -10^4 <= lists[i][j] <= 10^4\n  - lists[i] is sorted in ascending order.\n  - The sum of lists[i].length will not exceed 10^4."
+  },
+  {
+    "id": "invert-binary-tree",
+    "title": "Invert Binary Tree",
+    "difficulty": "easy",
+    "tags": ["trees", "dfs", "bfs", "recursion"],
+    "description": "Given the root of a binary tree, invert the tree, and return its root.\n\nExample 1:\n  Input: root = [4,2,7,1,3,6,9]\n  Output: [4,7,2,9,6,3,1]\n\nExample 2:\n  Input: root = [2,1,3]\n  Output: [2,3,1]\n\nExample 3:\n  Input: root = []\n  Output: []\n\nConstraints:\n  - The number of nodes in the tree is in the range [0, 100].\n  - -100 <= Node.val <= 100"
+  },
+  {
+    "id": "maximum-depth-binary-tree",
+    "title": "Maximum Depth of Binary Tree",
+    "difficulty": "easy",
+    "tags": ["trees", "dfs", "bfs", "recursion"],
+    "description": "Given the root of a binary tree, return its maximum depth.\n\nA binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.\n\nExample 1:\n  Input: root = [3,9,20,null,null,15,7]\n  Output: 3\n\nExample 2:\n  Input: root = [1,null,2]\n  Output: 2\n\nConstraints:\n  - The number of nodes in the tree is in the range [0, 10^4].\n  - -100 <= Node.val <= 100"
+  },
+  {
+    "id": "same-tree",
+    "title": "Same Tree",
+    "difficulty": "easy",
+    "tags": ["trees", "dfs", "bfs", "recursion"],
+    "description": "Given the roots of two binary trees p and q, write a function to check if they are the same or not.\n\nTwo binary trees are considered the same if they are structurally identical, and the nodes have the same value.\n\nExample 1:\n  Input: p = [1,2,3], q = [1,2,3]\n  Output: true\n\nExample 2:\n  Input: p = [1,2], q = [1,null,2]\n  Output: false\n\nExample 3:\n  Input: p = [1,2,1], q = [1,1,2]\n  Output: false\n\nConstraints:\n  - The number of nodes in both trees is in the range [0, 100].\n  - -10^4 <= Node.val <= 10^4"
+  },
+  {
+    "id": "validate-binary-search-tree",
+    "title": "Validate Binary Search Tree",
+    "difficulty": "medium",
+    "tags": ["trees", "dfs", "bfs", "recursion"],
+    "description": "Given the root of a binary tree, determine if it is a valid binary search tree (BST).\n\nA valid BST is defined as follows:\n  - The left subtree of a node contains only nodes with keys less than the node's key.\n  - The right subtree of a node contains only nodes with keys greater than the node's key.\n  - Both the left and right subtrees must also be binary search trees.\n\nExample 1:\n  Input: root = [2,1,3]\n  Output: true\n\nExample 2:\n  Input: root = [5,1,4,null,null,3,6]\n  Output: false\n  Explanation: The root node's value is 5 but its right child's value is 4.\n\nConstraints:\n  - The number of nodes in the tree is in the range [1, 10^4].\n  - -2^31 <= Node.val <= 2^31 - 1"
+  },
+  {
+    "id": "lowest-common-ancestor-bst",
+    "title": "Lowest Common Ancestor of a BST",
+    "difficulty": "medium",
+    "tags": ["trees", "dfs", "binary-search-tree"],
+    "description": "Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.\n\nThe lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).\n\nExample 1:\n  Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8\n  Output: 6\n  Explanation: The LCA of nodes 2 and 8 is 6.\n\nExample 2:\n  Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4\n  Output: 2\n  Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself.\n\nConstraints:\n  - The number of nodes in the tree is in the range [2, 10^5].\n  - -10^9 <= Node.val <= 10^9\n  - All Node.val are unique.\n  - p != q\n  - p and q will exist in the BST."
+  },
+  {
+    "id": "serialize-deserialize-binary-tree",
+    "title": "Serialize and Deserialize Binary Tree",
+    "difficulty": "hard",
+    "tags": ["trees", "dfs", "bfs", "design"],
+    "description": "Design an algorithm to serialize and deserialize a binary tree. Serialization is the process of converting a data structure into a sequence of bits so that it can be stored or transmitted and reconstructed later.\n\nThere is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.\n\nExample 1:\n  Input: root = [1,2,3,null,null,4,5]\n  Output: [1,2,3,null,null,4,5]\n\nExample 2:\n  Input: root = []\n  Output: []\n\nConstraints:\n  - The number of nodes in the tree is in the range [0, 10^4].\n  - -1000 <= Node.val <= 1000"
+  },
+  {
+    "id": "clone-graph",
+    "title": "Clone Graph",
+    "difficulty": "medium",
+    "tags": ["graphs", "dfs", "bfs", "hash-table"],
+    "description": "Given a reference of a node in a connected undirected graph, return a deep copy (clone) of the graph.\n\nEach node in the graph contains a value (int) and a list of its neighbors.\n\nExample 1:\n  Input: adjList = [[2,4],[1,3],[2,4],[1,3]]\n  Output: [[2,4],[1,3],[2,4],[1,3]]\n  Explanation: There are 4 nodes in the graph. Node 1's neighbors are 2 and 4. Node 2's neighbors are 1 and 3. Node 3's neighbors are 2 and 4. Node 4's neighbors are 1 and 3.\n\nExample 2:\n  Input: adjList = [[]]\n  Output: [[]]\n\nExample 3:\n  Input: adjList = []\n  Output: []\n\nConstraints:\n  - The number of nodes in the graph is in the range [0, 100].\n  - 1 <= Node.val <= 100\n  - There are no repeated edges and no self-loops.\n  - The graph is connected and all nodes can be visited starting from the given node."
+  },
+  {
+    "id": "course-schedule",
+    "title": "Course Schedule",
+    "difficulty": "medium",
+    "tags": ["graphs", "dfs", "bfs", "topological-sort"],
+    "description": "There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.\n\nReturn true if you can finish all courses. Otherwise, return false.\n\nExample 1:\n  Input: numCourses = 2, prerequisites = [[1,0]]\n  Output: true\n  Explanation: There are 2 courses to take. To take course 1 you should have finished course 0. So it is possible.\n\nExample 2:\n  Input: numCourses = 2, prerequisites = [[1,0],[0,1]]\n  Output: false\n  Explanation: There are 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should have finished course 1. So it is impossible.\n\nConstraints:\n  - 1 <= numCourses <= 2000\n  - 0 <= prerequisites.length <= 5000\n  - prerequisites[i].length == 2\n  - 0 <= ai, bi < numCourses\n  - All the pairs prerequisites[i] are unique."
+  },
+  {
+    "id": "pacific-atlantic-water-flow",
+    "title": "Pacific Atlantic Water Flow",
+    "difficulty": "medium",
+    "tags": ["graphs", "dfs", "bfs", "matrix"],
+    "description": "There is an m x n rectangular island that borders both the Pacific Ocean and Atlantic Ocean. The Pacific Ocean touches the island's left and top edges, and the Atlantic Ocean touches the island's right and bottom edges.\n\nThe island receives rain. Rain water can flow to neighboring cells (north, south, east, west) if the neighboring cell's height is less than or equal to the current cell's height. Water can flow from any cell adjacent to an ocean into the ocean.\n\nReturn a 2D list of grid coordinates result where result[i] = [ri, ci] denotes that rain water can flow from cell (ri, ci) to both the Pacific and Atlantic oceans.\n\nExample 1:\n  Input: heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]\n  Output: [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]\n\nExample 2:\n  Input: heights = [[1]]\n  Output: [[0,0]]\n\nConstraints:\n  - m == heights.length\n  - n == heights[r].length\n  - 1 <= m, n <= 200\n  - 0 <= heights[r][c] <= 10^5"
+  },
+  {
+    "id": "graph-valid-tree",
+    "title": "Graph Valid Tree",
+    "difficulty": "medium",
+    "tags": ["graphs", "dfs", "bfs", "union-find"],
+    "description": "Given n nodes labeled from 0 to n-1 and a list of undirected edges, write a function to check whether these edges make up a valid tree.\n\nA valid tree has the following properties:\n  - It is connected (all nodes are reachable from any node)\n  - It has no cycles\n  - It has exactly n-1 edges for n nodes\n\nExample 1:\n  Input: n = 5, edges = [[0,1],[0,2],[0,3],[1,4]]\n  Output: true\n\nExample 2:\n  Input: n = 5, edges = [[0,1],[1,2],[2,3],[1,3],[1,4]]\n  Output: false\n\nConstraints:\n  - 1 <= n <= 2000\n  - 0 <= edges.length <= 5000\n  - edges[i].length == 2\n  - 0 <= ai, bi < n\n  - ai != bi\n  - There are no self-loops or repeated edges."
+  },
+  {
+    "id": "alien-dictionary",
+    "title": "Alien Dictionary",
+    "difficulty": "hard",
+    "tags": ["graphs", "topological-sort", "strings"],
+    "description": "There is a new alien language that uses the English alphabet. However, the order of the letters is unknown to you.\n\nYou are given a list of strings words from the alien language's dictionary, where the strings in words are sorted lexicographically by the rules of this new language.\n\nDerive the order of letters in this language. If the order is invalid, return an empty string. If there are multiple valid orderings, return any of them.\n\nExample 1:\n  Input: words = [\"wrt\",\"wrf\",\"er\",\"ett\",\"rftt\"]\n  Output: \"wertf\"\n\nExample 2:\n  Input: words = [\"z\",\"x\"]\n  Output: \"zx\"\n\nExample 3:\n  Input: words = [\"z\",\"x\",\"z\"]\n  Output: \"\"\n  Explanation: The order is invalid, so return empty string.\n\nConstraints:\n  - 1 <= words.length <= 100\n  - 1 <= words[i].length <= 100\n  - words[i] consists of only lowercase English letters."
+  },
+  {
+    "id": "house-robber",
+    "title": "House Robber",
+    "difficulty": "easy",
+    "tags": ["dynamic-programming", "arrays"],
+    "description": "You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. The only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and it will automatically contact the police if two adjacent houses were broken into on the same night.\n\nGiven an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.\n\nExample 1:\n  Input: nums = [1,2,3,1]\n  Output: 4\n  Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3). Total = 1 + 3 = 4.\n\nExample 2:\n  Input: nums = [2,7,9,3,1]\n  Output: 12\n  Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total = 2 + 9 + 1 = 12.\n\nConstraints:\n  - 1 <= nums.length <= 100\n  - 0 <= nums[i] <= 400"
+  },
+  {
+    "id": "longest-increasing-subsequence",
+    "title": "Longest Increasing Subsequence",
+    "difficulty": "medium",
+    "tags": ["dynamic-programming", "arrays", "binary-search"],
+    "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence.\n\nExample 1:\n  Input: nums = [10,9,2,5,3,7,101,18]\n  Output: 4\n  Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.\n\nExample 2:\n  Input: nums = [0,1,0,3,2,3]\n  Output: 4\n\nExample 3:\n  Input: nums = [7,7,7,7,7,7,7]\n  Output: 1\n\nConstraints:\n  - 1 <= nums.length <= 2500\n  - -10^4 <= nums[i] <= 10^4\n\nFollow up: Can you come up with an algorithm that runs in O(n log(n)) time complexity?"
+  },
+  {
+    "id": "word-break",
+    "title": "Word Break",
+    "difficulty": "medium",
+    "tags": ["dynamic-programming", "strings", "hash-table"],
+    "description": "Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.\n\nNote that the same word in the dictionary may be reused multiple times in the segmentation.\n\nExample 1:\n  Input: s = \"leetcode\", wordDict = [\"leet\",\"code\"]\n  Output: true\n  Explanation: Return true because \"leetcode\" can be segmented as \"leet code\".\n\nExample 2:\n  Input: s = \"applepenapple\", wordDict = [\"apple\",\"pen\"]\n  Output: true\n  Explanation: Return true because \"applepenapple\" can be segmented as \"apple pen apple\".\n\nExample 3:\n  Input: s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]\n  Output: false\n\nConstraints:\n  - 1 <= s.length <= 300\n  - 1 <= wordDict.length <= 1000\n  - 1 <= wordDict[i].length <= 20\n  - s and wordDict[i] consist of only lowercase English letters.\n  - All the strings of wordDict are unique."
+  },
+  {
+    "id": "combination-sum",
+    "title": "Combination Sum",
+    "difficulty": "medium",
+    "tags": ["arrays", "backtracking", "recursion"],
+    "description": "Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may return the combinations in any order.\n\nThe same number may be chosen from candidates an unlimited number of times. Two combinations are unique if the frequency of at least one of the chosen numbers is different.\n\nExample 1:\n  Input: candidates = [2,3,6,7], target = 7\n  Output: [[2,2,3],[7]]\n  Explanation: 2 and 3 are candidates, and 2 + 2 + 3 = 7. 7 is a candidate, and 7 = 7. These are the only two combinations.\n\nExample 2:\n  Input: candidates = [2,3,5], target = 8\n  Output: [[2,2,2,2],[2,3,3],[3,5]]\n\nExample 3:\n  Input: candidates = [2], target = 1\n  Output: []\n\nConstraints:\n  - 1 <= candidates.length <= 30\n  - 2 <= candidates[i] <= 40\n  - All elements of candidates are distinct.\n  - 1 <= target <= 40"
+  },
+  {
+    "id": "unique-paths",
+    "title": "Unique Paths",
+    "difficulty": "medium",
+    "tags": ["dynamic-programming", "math"],
+    "description": "There is a robot on an m x n grid. The robot is initially located at the top-left corner (grid[0][0]). The robot tries to move to the bottom-right corner (grid[m-1][n-1]). The robot can only move either down or right at any point in time.\n\nGiven the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner.\n\nExample 1:\n  Input: m = 3, n = 7\n  Output: 28\n\nExample 2:\n  Input: m = 3, n = 2\n  Output: 3\n  Explanation: From the top-left corner, there are 3 paths to the bottom-right corner:\n    1. Right -> Down -> Down\n    2. Down -> Down -> Right\n    3. Down -> Right -> Down\n\nConstraints:\n  - 1 <= m, n <= 100"
+  },
+  {
+    "id": "edit-distance",
+    "title": "Edit Distance",
+    "difficulty": "hard",
+    "tags": ["dynamic-programming", "strings"],
+    "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.\n\nYou have the following three operations permitted on a word:\n  - Insert a character\n  - Delete a character\n  - Replace a character\n\nExample 1:\n  Input: word1 = \"horse\", word2 = \"ros\"\n  Output: 3\n  Explanation:\n    horse -> rorse (replace 'h' with 'r')\n    rorse -> rose (remove 'r')\n    rose -> ros (remove 'e')\n\nExample 2:\n  Input: word1 = \"intention\", word2 = \"execution\"\n  Output: 5\n  Explanation:\n    intention -> inention (remove 't')\n    inention -> enention (replace 'i' with 'e')\n    enention -> exention (replace 'n' with 'x')\n    exention -> exection (replace 'n' with 'c')\n    exection -> execution (insert 'u')\n\nConstraints:\n  - 0 <= word1.length, word2.length <= 500\n  - word1 and word2 consist of lowercase English letters."
+  },
+  {
+    "id": "valid-anagram",
+    "title": "Valid Anagram",
+    "difficulty": "easy",
+    "tags": ["strings", "hash-table", "sorting"],
+    "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise.\n\nAn anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.\n\nExample 1:\n  Input: s = \"anagram\", t = \"nagaram\"\n  Output: true\n\nExample 2:\n  Input: s = \"rat\", t = \"car\"\n  Output: false\n\nConstraints:\n  - 1 <= s.length, t.length <= 5 * 10^4\n  - s and t consist of lowercase English letters.\n\nFollow up: What if the inputs contain Unicode characters? How would you adapt your solution?"
+  },
+  {
+    "id": "longest-palindromic-substring",
+    "title": "Longest Palindromic Substring",
+    "difficulty": "medium",
+    "tags": ["strings", "dynamic-programming"],
+    "description": "Given a string s, return the longest palindromic substring in s.\n\nExample 1:\n  Input: s = \"babad\"\n  Output: \"bab\"\n  Explanation: \"aba\" is also a valid answer.\n\nExample 2:\n  Input: s = \"cbbd\"\n  Output: \"bb\"\n\nConstraints:\n  - 1 <= s.length <= 1000\n  - s consist of only digits and English letters."
+  },
+  {
+    "id": "palindromic-substrings",
+    "title": "Palindromic Substrings",
+    "difficulty": "medium",
+    "tags": ["strings", "dynamic-programming"],
+    "description": "Given a string s, return the number of palindromic substrings in it.\n\nA string is a palindrome when it reads the same backward as forward. A substring is a contiguous sequence of characters within the string.\n\nExample 1:\n  Input: s = \"abc\"\n  Output: 3\n  Explanation: Three palindromic strings: \"a\", \"b\", \"c\".\n\nExample 2:\n  Input: s = \"aaa\"\n  Output: 6\n  Explanation: Six palindromic strings: \"a\", \"a\", \"a\", \"aa\", \"aa\", \"aaa\".\n\nConstraints:\n  - 1 <= s.length <= 1000\n  - s consists of lowercase English letters."
+  },
+  {
+    "id": "minimum-window-substring",
+    "title": "Minimum Window Substring",
+    "difficulty": "hard",
+    "tags": ["strings", "sliding-window", "hash-table"],
+    "description": "Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string \"\".\n\nExample 1:\n  Input: s = \"ADOBECODEBANC\", t = \"ABC\"\n  Output: \"BANC\"\n  Explanation: The minimum window substring \"BANC\" includes 'A', 'B', and 'C' from string t.\n\nExample 2:\n  Input: s = \"a\", t = \"a\"\n  Output: \"a\"\n\nExample 3:\n  Input: s = \"a\", t = \"aa\"\n  Output: \"\"\n  Explanation: Both 'a's from t must be included in the window. Since the largest window of s only has one 'a', return empty string.\n\nConstraints:\n  - m == s.length\n  - n == t.length\n  - 1 <= m, n <= 10^5\n  - s and t consist of uppercase and lowercase English letters.\n\nFollow up: Could you find an algorithm that runs in O(m + n) time?"
+  }
+]
