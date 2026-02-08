@@ -27,3 +27,4 @@ data/interview.db
 Thumbs.db
 
 .claude
+.env.example
